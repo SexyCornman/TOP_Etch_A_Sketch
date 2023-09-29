@@ -21,6 +21,16 @@ body{
     
     
 }
+/* this will be delete */
+.gridcontainer-manual {
+    background-color: white;
+    display: flex;   
+    height: 800px;
+    width: 800px;
+    border: solid 10px black;
+    
+    
+}
 
 .column {
     flex: 1;
