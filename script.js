@@ -6,15 +6,23 @@ function createGrid() {
     allGridCell[i].style.backgroundColor ='yellow';
     }
 }
-const div = document.createElement('div');
+
 const gridContainer = document.querySelector('#grid-container');
 const allGridCell = document.querySelectorAll('#grid-cell');
-const column = document.querySelectorAll('.column');
+const column = document.querySelectorAll('#column');
 
 
 // testing
-// gridContainer.append(div)
-// div.classList.add('column')
+function createColumn(gridNum){    
+    for(i=0; i < gridNum;i++){
+    const div = document.createElement('div');
+    gridContainer.append(div)
+    div.setAttribute('id','column');               
+            
+    }
+}
+
+
 
 
 
