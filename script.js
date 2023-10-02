@@ -1,18 +1,11 @@
 
 
-
-// function createGrid() {
-//     for(i=0; i < allGridCell.length; i++){
-//     allGridCell[i].style.backgroundColor ='yellow';
-//     }
-// }
-
 const gridContainer = document.querySelector('#grid-container');
+const column = document.querySelector('#column');
 
 
 
 
-// testing
 
 
 function createGrid(gridNum){   
@@ -20,17 +13,16 @@ function createGrid(gridNum){
     for(i=0; i < gridNum;i++){
     const row  = document.createElement('div');
     row.setAttribute('id','column');   
-    gridContainer.appendChild(row);
-                
+    gridContainer.appendChild(row);   
+
+        for(j=0; j < gridNum;j++){
+        const pixel = document.createElement('div');
+        pixel.classList.add('gridcell');
+        row.appendChild(pixel);
+    }                    
 
     }
 }
-
-
-
-
-
-
 
 
 
