@@ -18,9 +18,10 @@ const gridContainer = document.querySelector('#grid-container');
 function createGrid(gridNum){   
     let n = gridNum; 
     for(i=0; i < gridNum;i++){
-    const div = document.createElement('div');
-    gridContainer.append(div)
-    div.setAttribute('id','column');               
+    const row  = document.createElement('div');
+    row.setAttribute('id','column');   
+    gridContainer.appendChild(row);
+                
 
     }
 }
