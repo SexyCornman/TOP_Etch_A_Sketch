@@ -13,17 +13,9 @@ const column = document.querySelectorAll;('#column');
 
 
 // testing
-function createGrid(gridNum){
-    for(i=0; i < gridNum;i++){
-    const griddiv = document.createElement('div');
-    column[i].append(griddiv)
-    griddiv.setAttribute('id','grid-cell');
-    griddiv.classList.add('gridcell');   
 
-}
-}
 
-function createColumn(gridNum){   
+function createGrid(gridNum){   
     let n = gridNum; 
     for(i=0; i < gridNum;i++){
     const div = document.createElement('div');
