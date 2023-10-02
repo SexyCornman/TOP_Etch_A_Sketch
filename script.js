@@ -8,8 +8,8 @@
 // }
 
 const gridContainer = document.querySelector('#grid-container');
-const allGridCell = document.querySelectorAll('#grid-cell');
-const column = document.querySelectorAll;('#column');
+
+
 
 
 // testing
