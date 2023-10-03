@@ -3,6 +3,7 @@ const gridContainer = document.querySelector('#grid-container');
 const DEFAULT_SIZE = 16 
 const color = document.getElementById('brush-color');
 let currentGridSize = "";
+let mainColor = color.value;
 
 
 
@@ -21,7 +22,7 @@ function createGrid(gridNum){
         pixel.classList.add('gridcell');
         row.append(pixel);
         pixel.addEventListener('mouseenter' , (e) => {
-            pixel.style.backgroundColor = color.value ;
+            pixel.style.backgroundColor = mainColor ;
         })
         
     }                 
