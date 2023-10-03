@@ -1,11 +1,13 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: url(cyberpunkbg.jpg)no-repeat center fixed;
     background-size: cover;    
-    padding: 2vw;
+    padding: 0;
+    margin: 0;
+    
 }
 
 
@@ -22,6 +24,8 @@ background: linear-gradient(351deg, rgba(152,16,7,1) 0%, rgba(242,116,212,1) 100
     box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
 -webkit-box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
 -moz-box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
+margin-top: 1vw;
+margin-bottom: 3vw;
 }
 
 
@@ -133,3 +137,13 @@ transition-property: background-color,border-color,color,box-shadow,filter;
     background-color: #9e1fe7;
 }
 
+.footer{
+    background-color:#191717 ;
+    text-align: center;
+    color: #F1EFEF;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+    
+}
