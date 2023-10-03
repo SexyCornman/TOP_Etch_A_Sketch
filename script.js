@@ -2,13 +2,15 @@
 const gridContainer = document.querySelector('#grid-container');
 const DEFAULT_SIZE = 16 
 const color = document.getElementById('brush-color');
-// let colorInput = color.value
+let currentGridSize = "";
+
 
 
 
 
 function createGrid(gridNum){   
     let n = gridNum; 
+    currentGridSize = n;
     for(i=0; i < gridNum;i++){
     const row  = document.createElement('div');
     row.setAttribute('id','column');   
@@ -29,7 +31,7 @@ function createGrid(gridNum){
 
 function gridReset() {
     gridContainer.innerHTML ="";
-    createGrid(16);
+    createGrid(currentGridSize);
 }
 
 function changeGridSize() {
