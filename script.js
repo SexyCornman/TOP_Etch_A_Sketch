@@ -1,5 +1,6 @@
 
 const gridContainer = document.querySelector('#grid-container');
+const DEFAULT_SIZE = 16 
 
 
 
@@ -16,9 +17,10 @@ function createGrid(gridNum){
         const pixel = document.createElement('div');
         pixel.classList.add('gridcell');
         row.append(pixel);
-    }                    
-    const gridCell = document.querySelectorAll('.gridcell');
-    }
+        
+    }                 
+       }
+       
 }
 
 function gridReset() {
@@ -39,8 +41,19 @@ function changeGridSize() {
 createGrid(16);
 
 // testing
-function yellowCheck(element){
+function colorElement(element){
     element.style.backgroundColor ='yellow'
 }
 
-const gridCell = document.querySelectorAll('.gridcell');
+function gridColor(){
+const item = document.querySelectorAll('.gridcontainer > div');
+item.forEach(colorElement);
+
+}
+
+
+
+// const gridCell = document.querySelectorAll('.gridcell');
+//        gridCell.addEventListener('mouseenter', (e) => {
+//            e.target.style.backgroundColor = 'black';
+//          });

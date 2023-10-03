@@ -37,13 +37,19 @@ body{
     
 }
 
-.gridcell:hover {
+/* .gridcell:hover {
     background-color: black;
-}
+} */
 
 #color {
     border: solid 1px;
     border-radius: 50%;
     height: 30px;
     width: 30px;
+}
+
+.test-box {
+    background-color: white;
+    width: 200px;
+    height: 200px;
 }
