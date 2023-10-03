@@ -112,7 +112,7 @@ transition-property: background-color,border-color,color,box-shadow,filter;
     font-size: 1rem;
     line-height: 1;
     border-radius: 500px;
-    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-property: all;
     transition-duration: .3s;
     border: 1px solid transparent;
     letter-spacing: 2px;
@@ -128,10 +128,24 @@ transition-property: background-color,border-color,color,box-shadow,filter;
     
 
 }
-.menu-button:hover{
+
+#rgb:hover{
+    transform: scale(1.04);
+    background: rgb(152,16,7);
+background: linear-gradient(254deg, rgba(152,16,7,1) 0%, rgba(255,201,0,1) 14%, rgba(238,255,115,1) 28%, rgba(88,183,118,1) 46%, rgba(97,148,201,1) 63%, rgba(0,26,255,1) 76%, rgba(255,0,198,1) 89%, rgba(255,0,0,1) 100%);
+}
+
+#reset-btn:hover{
     transform: scale(1.04);
     background-color: #9e1fe7;
 }
+
+#size-btn:hover {
+    transform: scale(2);
+    border: solid 1px white;
+}
+
+
 
 .footer{
   
