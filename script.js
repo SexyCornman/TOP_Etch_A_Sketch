@@ -17,6 +17,9 @@ function createGrid(gridNum){
         const pixel = document.createElement('div');
         pixel.classList.add('gridcell');
         row.append(pixel);
+        pixel.addEventListener('mouseenter' , (e) => {
+            pixel.style.backgroundColor = 'black';
+        })
         
     }                 
        }
@@ -40,20 +43,6 @@ function changeGridSize() {
 
 createGrid(16);
 
-// testing
-function colorElement(element){
-    element.style.backgroundColor ='yellow'
-}
-
-function gridColor(){
-const item = document.querySelectorAll('.gridcontainer > div');
-item.forEach(colorElement);
-
-}
 
 
 
-// const gridCell = document.querySelectorAll('.gridcell');
-//        gridCell.addEventListener('mouseenter', (e) => {
-//            e.target.style.backgroundColor = 'black';
-//          });

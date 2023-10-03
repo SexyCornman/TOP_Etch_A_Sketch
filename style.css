@@ -37,9 +37,7 @@ body{
     
 }
 
-/* .gridcell:hover {
-    background-color: black;
-} */
+
 
 #color {
     border: solid 1px;
@@ -48,8 +46,3 @@ body{
     width: 30px;
 }
 
-.test-box {
-    background-color: white;
-    width: 200px;
-    height: 200px;
-}
