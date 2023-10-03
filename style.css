@@ -10,15 +10,42 @@ body{
     align-items: center;
     background: rgb(152,16,7);
 background: linear-gradient(351deg, rgba(152,16,7,1) 0%, rgba(242,116,212,1) 100%);
-    padding: 20px;
+    padding: 1vw;
+    border-radius: 15%;
+    paddiing: 100px;
+    box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
+-moz-box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
+}
+
+
+.header{
+   padding: 1vw;
+   font-size: 3vw;
+   font-weight: 900;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 
 .gridcontainer {
     background-color: white;
     display: flex;   
-    height: 800px;
-    width: 800px;
-    border: solid 10px black;
+    height: 30vw;
+    width: 30vw;
+    border: solid 5px black;
+    border-radius: 10px;
     
     
 }
@@ -40,18 +67,15 @@ background: linear-gradient(351deg, rgba(152,16,7,1) 0%, rgba(242,116,212,1) 100
 
 .menubar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    gap: 1vw;
     padding: 2rem;
     
 
 }
 
-.button {
-    height: 40px;
-    width: 200px;
-}
+
 
 #brush-color {
 
@@ -59,4 +83,33 @@ background: linear-gradient(351deg, rgba(152,16,7,1) 0%, rgba(242,116,212,1) 100
     width: 60px;
 }
 
-/*  */
+
+.menu-button {
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: #fff;
+    background-color: #2a1ed7;
+    height: 48px;
+    
+
+}
+.menu-button:hover{
+    transform: scale(1.04);
+    background-color: #9e1fe7;
+}
+
