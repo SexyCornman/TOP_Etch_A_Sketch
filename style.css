@@ -90,7 +90,7 @@ margin-bottom: auto;
 #brush-color {
 height: 2vw;
 width: 2vw;
-border: solid 10px #2a1ed7;
+border: solid 1px #2a1ed7;
 border-radius: 15%;
 transition-property: background-color,border-color,color,box-shadow,filter;
     transition-duration: .3s;
