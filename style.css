@@ -10,7 +10,7 @@ body{
     align-items: center;
     background: rgb(152,16,7);
 background: linear-gradient(351deg, rgba(152,16,7,1) 0%, rgba(242,116,212,1) 100%);
-    padding: 1vw;
+    padding: 2vw;
     border-radius: 15%;
     paddiing: 100px;
     box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
@@ -78,10 +78,24 @@ background: linear-gradient(351deg, rgba(152,16,7,1) 0%, rgba(242,116,212,1) 100
 
 
 #brush-color {
+height: 2vw;
+width: 2vw;
+border: solid 10px #2a1ed7;
+border-radius: 15%;
+transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+}
 
+#brush-color:hover{
+    transform: scale(1.04);
+    background-color: #9e1fe7;
+    border-color: #9e1fe7;
+}
+
+    /* border-radius: 500px;
     height: 60px;
     width: 60px;
-}
+} */
 
 
 .menu-button {
