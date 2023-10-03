@@ -25,7 +25,7 @@ background: linear-gradient(351deg, rgba(152,16,7,1) 0%, rgba(242,116,212,1) 100
 -webkit-box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
 -moz-box-shadow: 12px 9px 5px -1px rgba(0,0,0,0.5);
 margin-top: 1vw;
-margin-bottom: 3vw;
+margin-bottom: auto;
 }
 
 
@@ -102,10 +102,6 @@ transition-property: background-color,border-color,color,box-shadow,filter;
     border-color: #9e1fe7;
 }
 
-    /* border-radius: 500px;
-    height: 60px;
-    width: 60px;
-} */
 
 
 .menu-button {
@@ -138,12 +134,13 @@ transition-property: background-color,border-color,color,box-shadow,filter;
 }
 
 .footer{
-    background-color:#191717 ;
+  
     text-align: center;
     color: #F1EFEF;
     font-size: 20px;
-    padding: 10px;
-    margin-top: auto;
+    padding: 10px;    
     width: 100%;
+   
+    
     
 }
