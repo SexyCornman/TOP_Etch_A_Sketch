@@ -40,3 +40,10 @@ body{
 .gridcell:hover {
     background-color: black;
 }
+
+#color {
+    border: solid 1px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}

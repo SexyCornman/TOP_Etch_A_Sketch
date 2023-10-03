@@ -1,8 +1,5 @@
 
-
 const gridContainer = document.querySelector('#grid-container');
-const column = document.querySelector('#column');
-
 
 
 
@@ -20,7 +17,7 @@ function createGrid(gridNum){
         pixel.classList.add('gridcell');
         row.append(pixel);
     }                    
-
+    const gridCell = document.querySelectorAll('.gridcell');
     }
 }
 
@@ -39,6 +36,11 @@ function changeGridSize() {
 }
 
 
-
-
 createGrid(16);
+
+// testing
+function yellowCheck(element){
+    element.style.backgroundColor ='yellow'
+}
+
+const gridCell = document.querySelectorAll('.gridcell');
