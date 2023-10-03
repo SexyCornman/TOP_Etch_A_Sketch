@@ -1,7 +1,8 @@
 
 const gridContainer = document.querySelector('#grid-container');
 const DEFAULT_SIZE = 16 
-
+const color = document.getElementById('brush-color');
+// let colorInput = color.value
 
 
 
@@ -18,7 +19,7 @@ function createGrid(gridNum){
         pixel.classList.add('gridcell');
         row.append(pixel);
         pixel.addEventListener('mouseenter' , (e) => {
-            pixel.style.backgroundColor = 'black';
+            pixel.style.backgroundColor = color.value ;
         })
         
     }                 
@@ -32,7 +33,7 @@ function gridReset() {
 }
 
 function changeGridSize() {
-    let gridSize = prompt ("please select grid size");
+    let gridSize = prompt ("please select grid size between 1 to 100");
     if (gridSize > 0 && gridSize <=100){
         gridContainer.innerHTML ="";
         createGrid(gridSize);
@@ -41,7 +42,7 @@ function changeGridSize() {
 }
 
 
-createGrid(16);
+createGrid(DEFAULT_SIZE);
 
 
 
