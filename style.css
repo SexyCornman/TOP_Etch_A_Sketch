@@ -8,7 +8,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background: rgb(152,16,7);
+background: linear-gradient(351deg, rgba(152,16,7,1) 0%, rgba(242,116,212,1) 100%);
     padding: 20px;
 }
 
@@ -32,17 +33,30 @@ body{
 
 .gridcell {
     flex:1 ;
-    border: solid  1px black;
+    
       
     
 }
 
+.menubar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    
 
-
-#color {
-    border: solid 1px;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
 }
 
+.button {
+    height: 40px;
+    width: 200px;
+}
+
+#brush-color {
+
+    height: 60px;
+    width: 60px;
+}
+
+/*  */

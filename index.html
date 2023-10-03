@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="container">
     <div class="content">
         <div class="header">Etch a sketch</div>   
 
@@ -15,14 +15,16 @@
       
     </div>
     <div class="menubar">
-      <button onclick="gridReset()">Reset</button> 
-      <button onclick="changeGridSize()">Change Grid size</button>
+      <button class="button" onclick="gridReset()">Reset</button> 
+      <button class="button" onclick="changeGridSize()">Change Grid size</button>
       <input type="color" name="brush" id="brush-color">
+      
    
      
     </div>
     </div>
-   
+    <div class="footer"></div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
