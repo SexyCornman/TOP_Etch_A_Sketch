@@ -3,7 +3,7 @@ const gridContainer = document.querySelector('#grid-container');
 const DEFAULT_SIZE = 16 
 const color = document.getElementById('brush-color');
 let currentGridSize = "";
-let currentColor
+let currentColor ="black"
 
 
 
@@ -52,19 +52,30 @@ function rgbColor() {
       });
 }
 
+function getColor(){
+    if (currentColor === "black"){
+        baseColor()
+    }
+    else if (currentColor === "rgb"){
+        rgbColor()
+    }
+}
 
 
 function gridReset() {
     gridContainer.innerHTML ="";
     createGrid(currentGridSize);
-    baseColor();
+    getColor()
 }
+
+
 
 function changeGridSize() {
     let gridSize = prompt ("please select grid size between 1 to 100");
     if (gridSize > 0 && gridSize <=100){
         gridContainer.innerHTML ="";
         createGrid(gridSize);
+        getColor()
     }
     else alert("nah that wont work");
 }
