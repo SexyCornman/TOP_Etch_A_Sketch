@@ -3,7 +3,7 @@ const gridContainer = document.querySelector('#grid-container');
 const DEFAULT_SIZE = 16 
 const color = document.getElementById('brush-color');
 let currentGridSize = "";
-let mainColor = color.value;
+let currentColor
 
 
 
@@ -20,19 +20,44 @@ function createGrid(gridNum){
         for(j=0; j < gridNum;j++){
         const pixel = document.createElement('div');
         pixel.classList.add('gridcell');
-        row.append(pixel);
-        pixel.addEventListener('mouseenter' , (e) => {
-            pixel.style.backgroundColor = mainColor ;
-        })
-        
+        row.append(pixel); 
     }                 
        }
        
 }
 
+
+
+
+function baseColor() {
+    currentColor = "black";
+    const cell = document.querySelectorAll('.gridcell');         
+      cell.forEach(item => {
+        item.addEventListener('mouseenter' , (e) => {
+            item.style.backgroundColor = 'black' ;
+        })
+        
+      });
+    
+}
+
+function rgbColor() {
+    currentColor = "rgb";
+    const cell = document.querySelectorAll('.gridcell');         
+      cell.forEach(item => {
+        item.addEventListener('mouseenter' , (e) => {
+            item.style.backgroundColor = '#' +  Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase(); ;
+        })
+        
+      });
+}
+
+
+
 function gridReset() {
     gridContainer.innerHTML ="";
     createGrid(currentGridSize);
+    baseColor();
 }
 
 function changeGridSize() {
@@ -44,16 +69,8 @@ function changeGridSize() {
     else alert("nah that wont work");
 }
 
-function randColor()  {
-    let random = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
-    mainColor = random
-}
-
 
 
 
 createGrid(DEFAULT_SIZE);
-
-
-
-
+baseColor()
