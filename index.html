@@ -15,15 +15,17 @@
       
     </div>
     <div class="menubar">
-      <button class="menu-button" id="reset-btn" role="button" onclick="gridReset()">Reset</button> 
+      <button class="menu-button" id="reset-btn" role="button" onclick="gridReset()">Reset</button>
+      <button class="menu-button" id="black-btn" role="button" onclick="baseColor()">black</button>  
       <button class="menu-button" id="rgb"  role="button" onclick="rgbColor()">RGB</button>  
       <!-- <button class="menu-button" id="shade-btn" role="button" onclick="gridReset()">SHADING</button>         -->
       <button class="menu-button" id="size-btn" role="button" onclick="changeGridSize()">Change Grid size</button>
-      <input type="color" name="brush" id="brush-color">
+      
       
    
      
     </div>
+    <input type="color" name="brush" id="brush-color" oninput="customColor()">
     </div>
     <div class="footer">copyright © 2023 SexyCornman</div>
 

@@ -140,6 +140,11 @@ background: linear-gradient(254deg, rgba(152,16,7,1) 0%, rgba(255,201,0,1) 14%, 
     background-color: #9e1fe7;
 }
 
+#black-btn:hover{
+    transform: scale(1.04);
+    background-color: #000000;
+}
+
 #size-btn:hover {
     transform: scale(2);
     border: solid 1px white;

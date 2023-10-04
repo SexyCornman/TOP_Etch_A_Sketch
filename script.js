@@ -3,7 +3,7 @@ const gridContainer = document.querySelector('#grid-container');
 const DEFAULT_SIZE = 16 
 const color = document.getElementById('brush-color');
 let currentGridSize = "";
-let currentColor ="black"
+let currentColor 
 
 
 
@@ -27,7 +27,18 @@ function createGrid(gridNum){
 }
 
 
+// color functions
 
+function customColor() {
+    currentColor = "custom";
+    const cell = document.querySelectorAll('.gridcell');         
+      cell.forEach(item => {
+        item.addEventListener('mouseenter' , (e) => {
+            item.style.backgroundColor = color.value ;
+        })
+        
+      })
+}
 
 function baseColor() {
     currentColor = "black";
@@ -59,8 +70,11 @@ function getColor(){
     else if (currentColor === "rgb"){
         rgbColor()
     }
+    else if (currentColor === "custom")
+        customColor()
 }
 
+// grid manipulation functions
 
 function gridReset() {
     gridContainer.innerHTML ="";
